@@ -12,7 +12,7 @@
   position: relative;
   min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: @navbar-margin-bottom;
-  border: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 
   // Prevent floats from breaking the navbar
   &:extend(.clearfix all);
@@ -157,15 +157,23 @@
   border-width: 1px 0 0;
 }
 
+.navbar-container {
+  margin: 0px 30px;
+}
+
 
 // Brand/project name
 
 .navbar-brand {
   float: left;
-  padding: @navbar-padding-vertical @navbar-padding-horizontal;
+  padding: (@navbar-padding-vertical / 2.5) 0;
   font-size: @font-size-large;
   line-height: @line-height-computed;
   height: @navbar-height;
+
+  .logo {
+    max-height: 100%;
+  }
 
   &:hover,
   &:focus {
@@ -230,7 +238,7 @@
 // the nav the full height of the horizontal nav (above 768px).
 
 .navbar-nav {
-  margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
+  margin: @navbar-padding-vertical -@navbar-padding-horizontal;
 
   > li > a {
     padding-top:    10px;
@@ -379,7 +387,7 @@
   .navbar-left  { .pull-left(); }
   .navbar-right {
     .pull-right();
-    margin-right: -@navbar-padding-horizontal;
+    margin-right: 0;
 
     ~ .navbar-right {
       margin-right: 0;
@@ -411,12 +419,27 @@
 
   .navbar-nav {
     > li > a {
+
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding-left: 16px;
+      padding-right: 16px;
+
       color: @navbar-default-link-color;
 
       &:hover,
       &:focus {
         color: @navbar-default-link-hover-color;
         background-color: @navbar-default-link-hover-bg;
+      }
+
+      &.btn-primary {
+        color: @btn-primary-color;
+        margin: 25px 0px;
+        padding: 10px 20px;
+        font-weight: 600;
+        letter-spacing: 3px;
       }
     }
     > .active > a {
