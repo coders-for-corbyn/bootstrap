@@ -10,7 +10,8 @@ source:           docs
 destination:      _gh_pages
 host:             0.0.0.0
 port:             9001
-url:              http://sandersforpresident.github.io/bootstrap/
+url:              http://sandersforpresident.github.io/
+baseurl:          /bootstrap
 encoding:         UTF-8
 
 # Custom vars
