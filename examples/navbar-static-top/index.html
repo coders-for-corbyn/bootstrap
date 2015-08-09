@@ -11,6 +11,12 @@
 
     <title>Static Top Navbar Example for Bootstrap</title>
 
+    <!--Google Fonts-->
+    <!--font-family: 'Lato', sans-serif;-->
+    <!--font-family: 'Lora', serif;-->
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,900italic,900,700italic,700,400italic,300italic,300,100italic,100|Lora:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
+
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -32,7 +38,7 @@
 
     <!-- Static navbar -->
     <nav class="navbar navbar-default navbar-static-top">
-      <div class="container">
+      <div class="navbar-container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -40,47 +46,54 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="/assets/img/logo.png">
+          </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="../navbar/">Default</a></li>
-            <li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
-            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+            <li><a href="#">Meet Bernie</a></li>
+            <li><a href="#">Issues</a></li>
+            <li><a href="#">Volunteer</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Democracy Daily</a></li>
+            <li><a href="#">More...</a></li>
+            <li><a class="btn btn-primary" href="#">Contribute</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
+    <h1 class="page-header">
+      CAMPAIGN NEWS
+    </h1>
 
     <div class="container">
+      <hr>
 
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>To see the difference between static and fixed top navbars, just scroll.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
+      <article class="blog-post">
+        <header>
+          <h4 class="blog-post-type">PRESS RELEASE</h4>
+          <h1 class="blog-post-title">Sanders Statement on Seattle Protesters</h1>
+          <time class="blog-post-meta" datetime="2015-08-08">August 8th, 2015</time>
+          <!--<div class="blog-social">-->
+            <!--<ul>-->
+              <!--<li class="icon icn-twitter"><a href="https://twitter.com/home?status=https://berniesanders.com/press-release/sanders-draws-record-crowd-in-seattle/%20via%20%40BernieSanders" target="_blank">Twitter</a></li>-->
+              <!--<li class="icon icn-facebook"><a target="_blank" href="https://www.facebook.com/share.php?u=https://berniesanders.com/press-release/sanders-draws-record-crowd-in-seattle/">Facebook</a></li>-->
+              <!--<li class="icon icn-email"><a href="mailto:?subject=Sanders Draws Record Crowd in Seattle&amp;body=SEATTLE â More than 15,000 boisterous supporters of Democratic presidential candidate Bernie Sanders packed inside and outside the University of Washington’s Hec Edmunson Pavilion on Saturday. “The momentum is unbelievable,” Sanders said. “We’ve got 12,000 people here,” he said to roar of the crowd inside the pavilion. “And a few minutes ago, I just talked to 3,000 people outside,” he added, citing a Seattle police estimate. The big turnouts are sending a powerful message, Sanders said, in arenas and convention centers here and in other cities from Phoenix to Houston to New Orleans to Madison, Wisconsin. (The 11,300 turnout in … Read more about it https://berniesanders.com/press-release/sanders-draws-record-crowd-in-seattle/">Email Link</a></li>-->
+            <!--</ul>-->
+          <!--</div>-->
+        </header>
+
+        <p class="blog-post-body">
+          SEATTLE – Sen. Bernie Sanders issued the following statement today after two demonstrators blocked him from addressing an event hosted by an organization supporting Social Security and Medicare: “I am disappointed that two people disrupted a rally attended by thousands at which I was invited to speak about fighting to protect Social Security and Medicare. I was especially disappointed because on criminal justice reform and the need to fight racism there is no other candidate for president who will fight harder than me.”
         </p>
-      </div>
+
+        <footer>
+          <a class="read-more" href="#">READ MORE</a>
+        </footer>
+
+      </article>
 
     </div> <!-- /container -->
 
@@ -89,6 +102,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>

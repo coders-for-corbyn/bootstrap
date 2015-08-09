@@ -15,15 +15,19 @@
   
 </title>
 
+<!-- Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Lato:400,900italic,900,700italic,700,400italic,300italic,300,100italic,100|Lora:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
+
 <!-- Bootstrap core CSS -->
 
-<link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../dist/css/bootstrap.css" rel="stylesheet">
 
 
 
 <!-- Documentation extras -->
 
-<link href="../assets/css/docs.min.css" rel="stylesheet">
+<link href="../assets/css/src/pygments-manni.css" rel="stylesheet">
+<link href="../assets/css/src/docs.css" rel="stylesheet">
 
 <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 <script src="../assets/js/ie-emulation-modes-warning.js"></script>
@@ -61,10 +65,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="../" class="navbar-brand">Bootstrap</a>
+      <a href="../" class="navbar-brand">
+        <img class="logo" src="/assets/img/logo.png">
+      </a>
     </div>
     <nav id="bs-navbar" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-right">
         <li>
           <a href="../getting-started/">Getting started</a>
         </li>
@@ -81,10 +87,6 @@
           <a href="../customize/">Customize</a>
         </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://expo.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');">Expo</a></li>
-        <li><a href="http://blog.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');">Blog</a></li>
-      </ul>
     </nav>
   </div>
 </header>
@@ -95,8 +97,7 @@
       <div class="container">
         <h1>Customize and download</h1>
         <p>Customize Bootstrap's components, Less variables, and jQuery plugins to get your very own version.</p>
-        <div id="carbonads-container"><div class="carbonad"><div id="azcarbon"></div><script>var z = document.createElement("script"); z.async = true; z.src = "http://engine.carbonads.com/z/32341/azcarbon_2_1_0_HORIZ"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script></div></div>
-
+        
       </div>
     </div>
 
@@ -329,31 +330,32 @@
         <div class="checkbox">
           <label>
             <input type="checkbox" checked value="component-animations.less">
-            Component animations (for JS)
+            Component animations (for JS)<br>
+            (includes Collapse)
           </label>
         </div>
         <div class="checkbox">
           <label>
             <input type="checkbox" checked value="dropdowns.less">
-            Dropdowns
+            Dropdown
           </label>
         </div>
         <div class="checkbox">
           <label>
             <input type="checkbox" checked value="tooltip.less">
-            Tooltips
+            Tooltip
           </label>
         </div>
         <div class="checkbox">
           <label>
             <input type="checkbox" checked value="popovers.less">
-            Popovers
+            Popover
           </label>
         </div>
         <div class="checkbox">
           <label>
             <input type="checkbox" checked value="modals.less">
-            Modals
+            Modal
           </label>
         </div>
         <div class="checkbox">
@@ -496,16 +498,16 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@gray-lighter">@gray-lighter</label>
-    <input id="input-@gray-lighter" type="text" value="lighten(@gray-base, 93.5%)" data-var="@gray-lighter" class="form-control"/>
+    <input id="input-@gray-lighter" type="text" value="#EFF3F7" data-var="@gray-lighter" class="form-control"/>
   </div>
   <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@brand-primary">@brand-primary</label>
-    <input id="input-@brand-primary" type="text" value="darken(#428bca, 6.5%)" data-var="@brand-primary" class="form-control"/>
+    <input id="input-@brand-primary" type="text" value="#147FD7" data-var="@brand-primary" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@brand-success">@brand-success</label>
-    <input id="input-@brand-success" type="text" value="#5cb85c" data-var="@brand-success" class="form-control"/>
+    <input id="input-@brand-success" type="text" value="#4ACC66" data-var="@brand-success" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@brand-info">@brand-info</label>
@@ -518,7 +520,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@brand-danger">@brand-danger</label>
-    <input id="input-@brand-danger" type="text" value="#d9534f" data-var="@brand-danger" class="form-control"/>
+    <input id="input-@brand-danger" type="text" value="#F55B5B" data-var="@brand-danger" class="form-control"/>
   </div>
 </div>
 <h2 id="scaffolding">Scaffolding</h2>
@@ -556,11 +558,11 @@
 <div class="row">
   <div class="col-xs-4">
     <label for="input-@font-family-sans-serif">@font-family-sans-serif</label>
-    <input id="input-@font-family-sans-serif" type="text" value="&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif" data-var="@font-family-sans-serif" class="form-control"/>
+    <input id="input-@font-family-sans-serif" type="text" value="&quot;Lato&quot;, Helvetica, Arial, sans-serif" data-var="@font-family-sans-serif" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@font-family-serif">@font-family-serif</label>
-    <input id="input-@font-family-serif" type="text" value="Georgia, &quot;Times New Roman&quot;, Times, serif" data-var="@font-family-serif" class="form-control"/>
+    <input id="input-@font-family-serif" type="text" value="&quot;Lora&quot;, Georgia, &quot;Times New Roman&quot;, Times, serif" data-var="@font-family-serif" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@font-family-monospace">@font-family-monospace</label>
@@ -574,7 +576,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@font-size-base">@font-size-base</label>
-    <input id="input-@font-size-base" type="text" value="14px" data-var="@font-size-base" class="form-control"/>
+    <input id="input-@font-size-base" type="text" value="16px" data-var="@font-size-base" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@font-size-large">@font-size-large</label>
@@ -708,7 +710,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@border-radius-base">@border-radius-base</label>
-    <input id="input-@border-radius-base" type="text" value="4px" data-var="@border-radius-base" class="form-control"/>
+    <input id="input-@border-radius-base" type="text" value="3px" data-var="@border-radius-base" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@border-radius-large">@border-radius-large</label>
@@ -717,7 +719,7 @@
   <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@border-radius-small">@border-radius-small</label>
-    <input id="input-@border-radius-small" type="text" value="3px" data-var="@border-radius-small" class="form-control"/>
+    <input id="input-@border-radius-small" type="text" value="2px" data-var="@border-radius-small" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@component-active-color">@component-active-color</label>
@@ -807,12 +809,12 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@btn-primary-bg">@btn-primary-bg</label>
-    <input id="input-@btn-primary-bg" type="text" value="@brand-primary" data-var="@btn-primary-bg" class="form-control"/>
+    <input id="input-@btn-primary-bg" type="text" value="@brand-danger" data-var="@btn-primary-bg" class="form-control"/>
   </div>
   <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@btn-primary-border">@btn-primary-border</label>
-    <input id="input-@btn-primary-border" type="text" value="darken(@btn-primary-bg, 5%)" data-var="@btn-primary-border" class="form-control"/>
+    <input id="input-@btn-primary-border" type="text" value="@brand-danger" data-var="@btn-primary-border" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@btn-success-color">@btn-success-color</label>
@@ -1154,7 +1156,7 @@
 <div class="row">
   <div class="col-xs-4">
     <label for="input-@container-tablet">@container-tablet</label>
-    <input id="input-@container-tablet" type="text" value="(720px + @grid-gutter-width)" data-var="@container-tablet" class="form-control"/>
+    <input id="input-@container-tablet" type="text" value="(500px + @grid-gutter-width)" data-var="@container-tablet" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@container-sm">@container-sm</label>
@@ -1163,7 +1165,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@container-desktop">@container-desktop</label>
-    <input id="input-@container-desktop" type="text" value="(940px + @grid-gutter-width)" data-var="@container-desktop" class="form-control"/>
+    <input id="input-@container-desktop" type="text" value="(700px + @grid-gutter-width)" data-var="@container-desktop" class="form-control"/>
   </div>
   <div class="clearfix"></div>
   <div class="col-xs-4">
@@ -1173,7 +1175,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@container-large-desktop">@container-large-desktop</label>
-    <input id="input-@container-large-desktop" type="text" value="(1140px + @grid-gutter-width)" data-var="@container-large-desktop" class="form-control"/>
+    <input id="input-@container-large-desktop" type="text" value="(850px + @grid-gutter-width)" data-var="@container-large-desktop" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@container-lg">@container-lg</label>
@@ -1185,7 +1187,7 @@
 <div class="row">
   <div class="col-xs-4">
     <label for="input-@navbar-height">@navbar-height</label>
-    <input id="input-@navbar-height" type="text" value="50px" data-var="@navbar-height" class="form-control"/>
+    <input id="input-@navbar-height" type="text" value="95px" data-var="@navbar-height" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@navbar-margin-bottom">@navbar-margin-bottom</label>
@@ -1211,24 +1213,24 @@
   <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@navbar-default-color">@navbar-default-color</label>
-    <input id="input-@navbar-default-color" type="text" value="#777" data-var="@navbar-default-color" class="form-control"/>
+    <input id="input-@navbar-default-color" type="text" value="#364350" data-var="@navbar-default-color" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@navbar-default-bg">@navbar-default-bg</label>
-    <input id="input-@navbar-default-bg" type="text" value="#f8f8f8" data-var="@navbar-default-bg" class="form-control"/>
+    <input id="input-@navbar-default-bg" type="text" value="#ffffff" data-var="@navbar-default-bg" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@navbar-default-border">@navbar-default-border</label>
-    <input id="input-@navbar-default-border" type="text" value="darken(@navbar-default-bg, 6.5%)" data-var="@navbar-default-border" class="form-control"/>
+    <input id="input-@navbar-default-border" type="text" value="#EFF3F7" data-var="@navbar-default-border" class="form-control"/>
   </div>
   <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@navbar-default-link-color">@navbar-default-link-color</label>
-    <input id="input-@navbar-default-link-color" type="text" value="#777" data-var="@navbar-default-link-color" class="form-control"/>
+    <input id="input-@navbar-default-link-color" type="text" value="#364350" data-var="@navbar-default-link-color" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@navbar-default-link-hover-color">@navbar-default-link-hover-color</label>
-    <input id="input-@navbar-default-link-hover-color" type="text" value="#333" data-var="@navbar-default-link-hover-color" class="form-control"/>
+    <input id="input-@navbar-default-link-hover-color" type="text" value="@brand-primary" data-var="@navbar-default-link-hover-color" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@navbar-default-link-hover-bg">@navbar-default-link-hover-bg</label>
@@ -1237,15 +1239,15 @@
   <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@navbar-default-link-active-color">@navbar-default-link-active-color</label>
-    <input id="input-@navbar-default-link-active-color" type="text" value="#555" data-var="@navbar-default-link-active-color" class="form-control"/>
+    <input id="input-@navbar-default-link-active-color" type="text" value="#364350" data-var="@navbar-default-link-active-color" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@navbar-default-link-active-bg">@navbar-default-link-active-bg</label>
-    <input id="input-@navbar-default-link-active-bg" type="text" value="darken(@navbar-default-bg, 6.5%)" data-var="@navbar-default-link-active-bg" class="form-control"/>
+    <input id="input-@navbar-default-link-active-bg" type="text" value="transparent" data-var="@navbar-default-link-active-bg" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@navbar-default-link-disabled-color">@navbar-default-link-disabled-color</label>
-    <input id="input-@navbar-default-link-disabled-color" type="text" value="#ccc" data-var="@navbar-default-link-disabled-color" class="form-control"/>
+    <input id="input-@navbar-default-link-disabled-color" type="text" value="#364350" data-var="@navbar-default-link-disabled-color" class="form-control"/>
   </div>
   <div class="clearfix"></div>
   <div class="col-xs-4">
@@ -2349,6 +2351,11 @@
   </div>
   <div class="clearfix"></div>
   <div class="col-xs-4">
+    <label for="input-@dl-horizontal-breakpoint">@dl-horizontal-breakpoint</label>
+    <input id="input-@dl-horizontal-breakpoint" type="text" aria-describedby="help-block-@dl-horizontal-breakpoint" value="@grid-float-breakpoint" data-var="@dl-horizontal-breakpoint" class="form-control"/>
+    <p id="help-block-@dl-horizontal-breakpoint" class="help-block">Point at which .dl-horizontal becomes horizontal</p>
+  </div>
+  <div class="col-xs-4">
     <label for="input-@hr-border">@hr-border</label>
     <input id="input-@hr-border" type="text" aria-describedby="help-block-@hr-border" value="@gray-lighter" data-var="@hr-border" class="form-control"/>
     <p id="help-block-@hr-border" class="help-block">Horizontal line color.</p>
@@ -2436,46 +2443,36 @@
 ================================================== -->
 <footer class="bs-docs-footer" role="contentinfo">
   <div class="container">
-    <div class="bs-docs-social">
-  <ul class="bs-docs-social-buttons">
-    <li>
-      <iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
-    </li>
-    <li>
-      <iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
-    </li>
-    <li class="follow-btn">
-      <a href="https://twitter.com/getbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @getbootstrap</a>
-    </li>
-    <li class="tweet-btn">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://getbootstrap.com/" data-count="horizontal" data-via="getbootstrap" data-related="mdo:Creator of Bootstrap">Tweet</a>
-    </li>
-  </ul>
-</div>
 
+    <div class="row">
+      <div class="col-md-3">
+        <p class="footer-header">Links</p>
+        <ul class="bs-docs-footer-links list-unstyled">
+          <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
+          <li><a href="https://twitter.com/getbootstrap">Twitter</a></li>
+          <li><a href="../getting-started/#examples">Examples</a></li>
+          <li><a href="../about/">About</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <p class="footer-header">Made By</p>
+        <ul class="bs-docs-footer-links list-unstyled">
+          <li><a href="https://twitter.com/mdo" target="_blank">@mdo</a></li>
+          <li><a href="https://twitter.com/fat" target="_blank">@fat</a></li>
+          <li><a href="https://github.com/orgs/twbs/people">Core Team</a></li>
+          <li><a href="https://github.com/twbs/bootstrap/graphs/contributors">Other Contributors</a></li>
+          <li><a href="https://github.com/mattpetitt">Matt Petitt</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <p class="footer-header">Licensed</p>
+        <ul class="bs-docs-footer-links list-unstyled">
+          <li><a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">Code: MIT</a></li>
+          <li><a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Docs: CC BY 3.0</a></li>
+        </ul>
+      </div>
+    </div>
 
-    <p>Designed and built with all the love in the world by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="https://twitter.com/fat" target="_blank">@fat</a>.</p>
-    <p>Maintained by the <a href="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
-    <p>Code licensed under <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
-    <ul class="bs-docs-footer-links text-muted">
-      <li>Currently v3.3.5</li>
-      <li>&middot;</li>
-      <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
-      <li>&middot;</li>
-      <li><a href="../getting-started/#examples">Examples</a></li>
-      <li>&middot;</li>
-      <li><a href="../2.3.2/">v2.3.2 docs</a></li>
-      <li>&middot;</li>
-      <li><a href="../about/">About</a></li>
-      <li>&middot;</li>
-      <li><a href="http://expo.getbootstrap.com">Expo</a></li>
-      <li>&middot;</li>
-      <li><a href="http://blog.getbootstrap.com">Blog</a></li>
-      <li>&middot;</li>
-      <li><a href="https://github.com/twbs/bootstrap/issues">Issues</a></li>
-      <li>&middot;</li>
-      <li><a href="https://github.com/twbs/bootstrap/releases">Releases</a></li>
-    </ul>
   </div>
 </footer>
 
@@ -2483,34 +2480,49 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.min.js"><\/script>')</script>
 
 
-  <script src="../dist/js/bootstrap.min.js"></script>
-
-
-
-  <script src="../assets/js/docs.min.js"></script>
+  <script src="../dist/js/bootstrap.js"></script>
 
 
 
-  <script>var __configBridge = {"autoprefixerBrowsers":["Android 2.3","Android >= 4","Chrome >= 20","Firefox >= 24","Explorer >= 8","iOS >= 6","Opera >= 12","Safari >= 6"],"jqueryCheck":["if (typeof jQuery === 'undefined') {","  throw new Error('Bootstrap\\'s JavaScript requires jQuery')","}\n"],"jqueryVersionCheck":["+function ($) {","  'use strict';","  var version = $.fn.jquery.split(' ')[0].split('.')","  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1)) {","    throw new Error('Bootstrap\\'s JavaScript requires jQuery version 1.9.1 or higher')","  }","}(jQuery);\n\n"]}</script>
   
-    <script src="../assets/js/customize.min.js"></script>
+  <script src="../assets/js/vendor/holder.min.js"></script>
+  
+  <script src="../assets/js/vendor/ZeroClipboard.min.js"></script>
+  
+  <script src="../assets/js/vendor/anchor.js"></script>
+  
+  <script src="../assets/js/src/application.js"></script>
+  
+
+
+
+  <script>var __configBridge = {"autoprefixerBrowsers":["Android 2.3","Android >= 4","Chrome >= 20","Firefox >= 24","Explorer >= 8","iOS >= 6","Opera >= 12","Safari >= 6"],"jqueryCheck":["if (typeof jQuery === 'undefined') {","  throw new Error('Bootstrap\\'s JavaScript requires jQuery')","}\n"],"jqueryVersionCheck":["+function ($) {","  'use strict';","  var version = $.fn.jquery.split(' ')[0].split('.')","  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1) || (version[0] > 2)) {","    throw new Error('Bootstrap\\'s JavaScript requires jQuery version 1.9.1 or higher, but lower than version 3')","  }","}(jQuery);\n\n"]}</script>
+  
+    
+    <script src="../assets/js/vendor/autoprefixer.js"></script>
+    
+    <script src="../assets/js/vendor/less.min.js"></script>
+    
+    <script src="../assets/js/vendor/jszip.min.js"></script>
+    
+    <script src="../assets/js/vendor/uglify.min.js"></script>
+    
+    <script src="../assets/js/vendor/Blob.js"></script>
+    
+    <script src="../assets/js/vendor/FileSaver.js"></script>
+    
+    <script src="../assets/js/raw-files.min.js"></script>
+    
+    <script src="../assets/js/src/customizer.js"></script>
+    
   
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
-
-
-<script>
-  window.twttr = (function (d,s,id) {
-    var t, js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return; js=d.createElement(s); js.id=id; js.async=1;
-    js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
-    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
-  }(document, "script", "twitter-wjs"));
-</script>
 
 <!-- Analytics
 ================================================== -->
