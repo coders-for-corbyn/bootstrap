@@ -349,6 +349,7 @@
 // Vertically center a button within a navbar (when *not* in a form).
 
 .navbar-btn {
+
   .navbar-vertical-align(@input-height-base);
 
   &.btn-sm {
@@ -404,6 +405,26 @@
   background-color: @navbar-default-bg;
   border-color: @navbar-default-border;
 
+//  &.nav-collapse-open {
+//    background-color: @navbar-inverse-bg;
+//    color: @navbar-inverse-color;
+//    border-color: @navbar-inverse-border;
+//    .navbar-brand {
+//      display: none;
+//    }
+//    .navbar-nav {
+//      .icon-bar {
+//        background-color: @navbar-inverse-color;
+//      }
+//      &>li>a {
+//        color: @navbar-inverse-link-color;
+//        &:hover {
+//          color: @navbar-inverse-link-active-color;
+//        }
+//      }
+//    }
+//  }
+
   .navbar-brand {
     color: @navbar-default-brand-color;
     &:hover,
@@ -411,6 +432,16 @@
       color: @navbar-default-brand-hover-color;
       background-color: @navbar-default-brand-hover-bg;
     }
+  }
+
+  .navbar-btn {
+
+    &.btn-primary {
+      .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
   }
 
   .navbar-text {
@@ -435,7 +466,7 @@
       }
 
       &.btn-primary {
-        color: @btn-primary-color;
+        .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
         margin: 25px 0px;
         padding: 10px 20px;
         font-weight: 600;
@@ -460,11 +491,22 @@
     }
   }
 
+  .navbar-toggle-text {
+    float: left;
+    margin-top: -5px;
+    margin-right: 10px;
+    letter-spacing: 2px;
+  }
+
+  .navbar-toggle-bars {
+    float: right;
+  }
+
   .navbar-toggle {
-    border-color: @navbar-default-toggle-border-color;
+
     &:hover,
     &:focus {
-      background-color: @navbar-default-toggle-hover-bg;
+      background-color: transparent;
     }
     .icon-bar {
       background-color: @navbar-default-toggle-icon-bar-bg;

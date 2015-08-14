@@ -104,7 +104,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@font-size-base">@font-size-base</label>
-    <input id="input-@font-size-base" type="text" value="16px" data-var="@font-size-base" class="form-control"/>
+    <input id="input-@font-size-base" type="text" value="14px" data-var="@font-size-base" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@font-size-large">@font-size-large</label>
@@ -159,7 +159,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@headings-font-weight">@headings-font-weight</label>
-    <input id="input-@headings-font-weight" type="text" value="500" data-var="@headings-font-weight" class="form-control"/>
+    <input id="input-@headings-font-weight" type="text" value="600" data-var="@headings-font-weight" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@headings-line-height">@headings-line-height</label>
@@ -242,7 +242,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@border-radius-large">@border-radius-large</label>
-    <input id="input-@border-radius-large" type="text" value="6px" data-var="@border-radius-large" class="form-control"/>
+    <input id="input-@border-radius-large" type="text" value="5px" data-var="@border-radius-large" class="form-control"/>
   </div>
   <div class="clearfix"></div>
   <div class="col-xs-4">
@@ -316,7 +316,7 @@
 <div class="row">
   <div class="col-xs-4">
     <label for="input-@btn-font-weight">@btn-font-weight</label>
-    <input id="input-@btn-font-weight" type="text" value="normal" data-var="@btn-font-weight" class="form-control"/>
+    <input id="input-@btn-font-weight" type="text" value="600" data-var="@btn-font-weight" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@btn-default-color">@btn-default-color</label>
@@ -407,7 +407,7 @@
   <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@btn-border-radius-large">@btn-border-radius-large</label>
-    <input id="input-@btn-border-radius-large" type="text" value="@border-radius-large" data-var="@btn-border-radius-large" class="form-control"/>
+    <input id="input-@btn-border-radius-large" type="text" value="@border-radius-base" data-var="@btn-border-radius-large" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@btn-border-radius-small">@btn-border-radius-small</label>
@@ -669,7 +669,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@grid-float-breakpoint">@grid-float-breakpoint</label>
-    <input id="input-@grid-float-breakpoint" type="text" aria-describedby="help-block-@grid-float-breakpoint" value="@screen-sm-min" data-var="@grid-float-breakpoint" class="form-control"/>
+    <input id="input-@grid-float-breakpoint" type="text" aria-describedby="help-block-@grid-float-breakpoint" value="@screen-lg-min" data-var="@grid-float-breakpoint" class="form-control"/>
     <p id="help-block-@grid-float-breakpoint" class="help-block">Point at which the navbar becomes uncollapsed.</p>
   </div>
   <div class="clearfix"></div>
@@ -801,7 +801,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@navbar-default-toggle-icon-bar-bg">@navbar-default-toggle-icon-bar-bg</label>
-    <input id="input-@navbar-default-toggle-icon-bar-bg" type="text" value="#888" data-var="@navbar-default-toggle-icon-bar-bg" class="form-control"/>
+    <input id="input-@navbar-default-toggle-icon-bar-bg" type="text" value="#333" data-var="@navbar-default-toggle-icon-bar-bg" class="form-control"/>
   </div>
   <div class="clearfix"></div>
   <div class="col-xs-4">
@@ -813,11 +813,11 @@
 <div class="row">
   <div class="col-xs-4">
     <label for="input-@navbar-inverse-color">@navbar-inverse-color</label>
-    <input id="input-@navbar-inverse-color" type="text" value="lighten(@gray-light, 15%)" data-var="@navbar-inverse-color" class="form-control"/>
+    <input id="input-@navbar-inverse-color" type="text" value="#ffffff" data-var="@navbar-inverse-color" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@navbar-inverse-bg">@navbar-inverse-bg</label>
-    <input id="input-@navbar-inverse-bg" type="text" value="#222" data-var="@navbar-inverse-bg" class="form-control"/>
+    <input id="input-@navbar-inverse-bg" type="text" value="@brand-primary" data-var="@navbar-inverse-bg" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@navbar-inverse-border">@navbar-inverse-border</label>
@@ -826,11 +826,11 @@
   <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@navbar-inverse-link-color">@navbar-inverse-link-color</label>
-    <input id="input-@navbar-inverse-link-color" type="text" value="lighten(@gray-light, 15%)" data-var="@navbar-inverse-link-color" class="form-control"/>
+    <input id="input-@navbar-inverse-link-color" type="text" value="@navbar-inverse-color" data-var="@navbar-inverse-link-color" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@navbar-inverse-link-hover-color">@navbar-inverse-link-hover-color</label>
-    <input id="input-@navbar-inverse-link-hover-color" type="text" value="#fff" data-var="@navbar-inverse-link-hover-color" class="form-control"/>
+    <input id="input-@navbar-inverse-link-hover-color" type="text" value="darken(@navbar-inverse-link-color,5%)" data-var="@navbar-inverse-link-hover-color" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@navbar-inverse-link-hover-bg">@navbar-inverse-link-hover-bg</label>
@@ -843,11 +843,11 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@navbar-inverse-link-active-bg">@navbar-inverse-link-active-bg</label>
-    <input id="input-@navbar-inverse-link-active-bg" type="text" value="darken(@navbar-inverse-bg, 10%)" data-var="@navbar-inverse-link-active-bg" class="form-control"/>
+    <input id="input-@navbar-inverse-link-active-bg" type="text" value="transparent" data-var="@navbar-inverse-link-active-bg" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@navbar-inverse-link-disabled-color">@navbar-inverse-link-disabled-color</label>
-    <input id="input-@navbar-inverse-link-disabled-color" type="text" value="#444" data-var="@navbar-inverse-link-disabled-color" class="form-control"/>
+    <input id="input-@navbar-inverse-link-disabled-color" type="text" value="darken(@navbar-inverse-link-color,5%)" data-var="@navbar-inverse-link-disabled-color" class="form-control"/>
   </div>
   <div class="clearfix"></div>
   <div class="col-xs-4">
@@ -1045,7 +1045,7 @@
   </div>
   <div class="col-xs-4">
     <label for="input-@jumbotron-color">@jumbotron-color</label>
-    <input id="input-@jumbotron-color" type="text" value="inherit" data-var="@jumbotron-color" class="form-control"/>
+    <input id="input-@jumbotron-color" type="text" value="#ffffff" data-var="@jumbotron-color" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@jumbotron-bg">@jumbotron-bg</label>
@@ -1054,7 +1054,7 @@
   <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@jumbotron-heading-color">@jumbotron-heading-color</label>
-    <input id="input-@jumbotron-heading-color" type="text" value="inherit" data-var="@jumbotron-heading-color" class="form-control"/>
+    <input id="input-@jumbotron-heading-color" type="text" value="#ffffff" data-var="@jumbotron-heading-color" class="form-control"/>
   </div>
   <div class="col-xs-4">
     <label for="input-@jumbotron-font-size">@jumbotron-font-size</label>

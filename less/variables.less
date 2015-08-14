@@ -48,7 +48,7 @@
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          16px;
+@font-size-base:          14px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
@@ -66,7 +66,7 @@
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    inherit;
-@headings-font-weight:    500;
+@headings-font-weight:    600;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
@@ -103,7 +103,7 @@
 @line-height-small:         1.5;
 
 @border-radius-base:        3px;
-@border-radius-large:       6px;
+@border-radius-large:       5px;
 @border-radius-small:       2px;
 
 //** Global color for active items (e.g., navs or dropdowns).
@@ -142,7 +142,7 @@
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-@btn-font-weight:                normal;
+@btn-font-weight:                600;
 
 @btn-default-color:              #333;
 @btn-default-bg:                 #fff;
@@ -172,7 +172,7 @@
 
 // Allows for customizing button radius independently from global border radius
 @btn-border-radius-base:         @border-radius-base;
-@btn-border-radius-large:        @border-radius-large;
+@btn-border-radius-large:        @border-radius-base;
 @btn-border-radius-small:        @border-radius-small;
 
 
@@ -327,7 +327,7 @@
 @grid-gutter-width:         30px;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
-@grid-float-breakpoint:     @screen-sm-min;
+@grid-float-breakpoint:     @screen-lg-min;
 //** Point at which the navbar begins collapsing.
 @grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
 
@@ -384,23 +384,23 @@
 
 // Navbar toggle
 @navbar-default-toggle-hover-bg:           #ddd;
-@navbar-default-toggle-icon-bar-bg:        #888;
+@navbar-default-toggle-icon-bar-bg:        #333;
 @navbar-default-toggle-border-color:       #ddd;
 
 
 //=== Inverted navbar
 // Reset inverted navbar basics
-@navbar-inverse-color:                      lighten(@gray-light, 15%);
-@navbar-inverse-bg:                         #222;
+@navbar-inverse-color:                      #ffffff;
+@navbar-inverse-bg:                         @brand-primary;
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
-@navbar-inverse-link-color:                 lighten(@gray-light, 15%);
-@navbar-inverse-link-hover-color:           #fff;
+@navbar-inverse-link-color:                 @navbar-inverse-color;
+@navbar-inverse-link-hover-color:           darken(@navbar-inverse-link-color,5%);
 @navbar-inverse-link-hover-bg:              transparent;
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
-@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);
-@navbar-inverse-link-disabled-color:        #444;
+@navbar-inverse-link-active-bg:             transparent;
+@navbar-inverse-link-disabled-color:        darken(@navbar-inverse-link-color,5%);
 @navbar-inverse-link-disabled-bg:           transparent;
 
 // Inverted navbar brand label
@@ -485,9 +485,9 @@
 //##
 
 @jumbotron-padding:              30px;
-@jumbotron-color:                inherit;
+@jumbotron-color:                #ffffff;
 @jumbotron-bg:                   @gray-lighter;
-@jumbotron-heading-color:        inherit;
+@jumbotron-heading-color:        #ffffff;
 @jumbotron-font-size:            ceil((@font-size-base * 1.5));
 @jumbotron-heading-font-size:    ceil((@font-size-base * 4.5));
 
