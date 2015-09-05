@@ -1,6 +1,6 @@
 {
-  "name": "bootstrap",
-  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+  "name": "berniestrap",
+  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web, modified to match the style of the Bernie Sanders Presidential campaign.",
   "keywords": [
     "css",
     "js",
@@ -9,13 +9,15 @@
     "responsive",
     "front-end",
     "framework",
-    "web"
+    "web",
+    "bernie sanders"
   ],
   "homepage": "http://getbootstrap.com",
   "license": "MIT",
   "moduleType": "globals",
   "main": [
-    "less/bootstrap.less",
+    "dist/css/bootstrap.css",
+    "dist/css/bootstrap-theme.css"
     "dist/js/bootstrap.js"
   ],
   "ignore": [
