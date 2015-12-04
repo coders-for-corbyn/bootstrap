@@ -1,6 +1,6 @@
 {
-  "name": "bootstrap",
-  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+  "name": "berniestrap",
+  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web, modified to match the style of the Bernie Sanders Presidential campaign.",
   "version": "3.3.5",
   "keywords": [
     "css",
@@ -12,7 +12,7 @@
     "web"
   ],
   "homepage": "http://getbootstrap.com",
-  "author": "Twitter, Inc.",
+  "author": "Twitter, Inc. and Matt Petitt",
   "scripts": {
     "test": "grunt test"
   },
@@ -21,10 +21,10 @@
   "main": "./dist/js/npm",
   "repository": {
     "type": "git",
-    "url": "https://github.com/twbs/bootstrap.git"
+    "url": "https://github.com/SandersForPresident/bootstrap.git"
   },
   "bugs": {
-    "url": "https://github.com/twbs/bootstrap/issues"
+    "url": "https://github.com/SandersForPresident/bootstrap/issues"
   },
   "license": "MIT",
   "devDependencies": {
