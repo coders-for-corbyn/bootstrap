@@ -27,7 +27,15 @@ download:
 blog:             http://blog.getbootstrap.com
 expo:             http://expo.getbootstrap.com
 
+# Old urls
+# cdn:
+#  css:            https://github.com/SandersForPresident/bootstrap/dist/css/bootstrap.min.css
+#  css_theme:      https://github.com/SandersForPresident/bootstrap/dist/css/bootstrap-theme.min.css
+#  js:             https://github.com/SandersForPresident/bootstrap/dist/js/bootstrap.min.js
+
+# New urls
 cdn:
-  css:            https://github.com/SandersForPresident/bootstrap/dist/css/bootstrap.min.css
-  css_theme:      https://github.com/SandersForPresident/bootstrap/dist/css/bootstrap-theme.min.css
-  js:             https://github.com/SandersForPresident/bootstrap/dist/js/bootstrap.min.js
+  css:			  http://coders.forsanders.com/bootstrap/dist/css/bootstrap.min.css
+  css_theme:      http://coders.forsanders.com/bootstrap/dist/css/bootstrap-theme.min.css
+  js:             http://coders.forsanders.com/bootstrap/dist/css/bootstrap.min.js
+
