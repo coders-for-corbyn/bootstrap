@@ -35,7 +35,7 @@ expo:             http://expo.getbootstrap.com
 
 # New urls
 cdn:
-  css:			  http://coders.forsanders.com/bootstrap/dist/css/bootstrap.min.css
+  css:            http://coders.forsanders.com/bootstrap/dist/css/bootstrap.min.css
   css_theme:      http://coders.forsanders.com/bootstrap/dist/css/bootstrap-theme.min.css
   js:             http://coders.forsanders.com/bootstrap/dist/css/bootstrap.min.js
 
