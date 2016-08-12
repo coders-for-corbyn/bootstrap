@@ -8,7 +8,7 @@ To get started, check out <http://sandersforpresident.github.io/bootstrap/!
 
 Several quick start options are available:
 
-* Clone the repo: `git clone https://github.com/sandersforpresident/bootstrap.git`.
+* Clone the repo: `git clone https://github.com/coders-for-corbyn/bootstrap.git`.
 
 * Just grab the bootstrap.css from the Dist folder.
 
